@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dice Probability Distribution Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 20px;
+    }
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    input {
+      padding: 5px;
+      margin: 5px;
+      width: 50px;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .result-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<h1>Dice Probability Distribution Calculator</h1>
+<div class="input-container">
+  <label>
+    N (Number of sides):
+    <input type="number" id="sides" value="6" min="2">
+  </label>
+  <label>
+    M (Number of dice):
+    <input type="number" id="dice" value="2" min="1">
+  </label>
+  <label>
+    K (Number of rolls):
+    <input type="number" id="rolls" value="1000" min="1">
+  </label>
+  <button onclick="calculateProbability()">Roll</button>
+</div>
+
+<div class="result-container" id="result">
+  <!-- Results will be displayed here -->
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
